@@ -86,23 +86,25 @@ const Header = () => {
     <>
       <section
         id="home"
-        className="text-6xl pb-6 font-bold py-10 text-center mb-6"
+        className="text-4xl sm:text-6xl pb-6 font-bold py-10 text-center mb-6"
       >
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-gusta to-kairo">
           ON
         </span>
       </section>
-      <nav className="sticky top-0 z-10 w-full flex justify-center h-20 backdrop-blur-lg">
-        <ul className="flex gap-x-14 items-center">
+      <nav className="sticky top-0 z-10 w-full flex justify-center h-20 backdrop-blur-lg mb-4 p-4">
+        <ul className="flex flex-wrap justify-center gap-4 sm:gap-14 items-center">
           {itemsNav.map((item, i) => (
             <li key={i}>
-              <a href={item.id}>{item.name}</a>
+              <a href={item.id} className="text-sm sm:text-lg">
+                {item.name}
+              </a>
             </li>
           ))}
         </ul>
       </nav>
-      <div className="text-center py-20">
-        <h3>
+      <div className="text-center py-20 sm:py-10">
+        <h3 className="text-sm sm:text-lg md:text-xl">
           Transformamos tus ideas en soluciones digitales: diseño web moderno y
           aplicaciones funcionales que impulsan tu negocio al siguiente nivel.
         </h3>

@@ -107,7 +107,7 @@ const Tech = () => {
       <h2 className="text-2xl font-semibold pb-12">
         Tecnologias que utilizamos
       </h2>
-      <div className="flex flex-wrap justify-center gap-6 w-2/4">
+      <div className="flex flex-wrap justify-center gap-6 w-3/4 lg:w-2/4">
         {techs.map((t) => (
           <TechCard name={t.name} web={t.web} key={t.name} svg={t.svg} />
         ))}

@@ -39,13 +39,13 @@ const Contact = () => {
       id="contact"
       className="flex flex-col gap-5 items-center my-1 py-20"
     >
-      <h2 className="text-2xl font-semibold pb-16">
+      <h2 className="text-xl text-center lg:text-2xl font-semibold pb-16">
         ¿Quieres trabajar con nosotros? Contáctanos
       </h2>
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="flex flex-col gap-8 w-2/6 mb-5"
+        className="flex flex-col gap-8 w-full px-5 md:w-2/5 lg:w-3/5 mb-5 xl:w-2/5"
       >
         <div>
           <label htmlFor="user_name" className="sr-only">
