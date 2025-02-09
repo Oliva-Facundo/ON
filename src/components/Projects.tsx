@@ -2,6 +2,9 @@ import { useState } from "react";
 import arrowLeft from "../assets/arrow-sm-left-svgrepo-com.svg";
 import arrowRight from "../assets/arrow-sm-right-svgrepo-com.svg";
 import storyStarter from "../assets/storystarter.jpg";
+import medicall from "../assets/Medicall.png";
+import interbooks from "../assets/InterBooks.png";
+import buildingHub from "../assets/buildinghub.jpg";
 
 const Projects = () => {
   const projects = [
@@ -10,62 +13,36 @@ const Projects = () => {
       description:
         "Plataforma de crowdfunding de historias. Desarrollada con React y Node.js",
       image: storyStarter,
-      url: "https://via.placeholder.com/150",
-      code: "https://via.placeholder.com/150",
+      url: "https://storystarter.vercel.app/",
     },
     {
-      title: "Project 2",
+      title: "TymeSync",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe totam ratione, ea voluptate distinctio rerum quibusdam odit ipsa dolorum nostrum quisquam quidem laborum facilis consequatur fugiat placeat itaque deserunt incidunt.",
+        "TymeSync es una plataforma para la gestion de citas y reservas para negocios de servicios.",
       image:
         "https://cdn.pixabay.com/photo/2022/09/30/10/05/river-7489170_960_720.jpg",
       url: "https://via.placeholder.com/150",
-      code: "https://via.placeholder.com/150",
     },
     {
       title: "Medicall",
       description:
-        "MediCall es una aplicación web desarrollada en No Country utilizando Python, Django y PostgreSQL",
-      image:
-        "https://cdn.pixabay.com/photo/2021/12/22/22/41/bow-river-6888321_960_720.jpg",
-      url: "https://via.placeholder.com/150",
-      code: "https://via.placeholder.com/150",
+        "MediCall es una plataforma de telemedicina diseñada para mejorar la eficiencia en las consultas médicas. Nuestro objetivo principal es permitir el acceso a servicios médicos desde cualquier ubicación, facilitando así la atención médica remota.",
+      image: medicall,
+      url: "https://c17-70-m-python.vercel.app/",
     },
     {
       title: "InterBooks",
       description:
         "InterBooks es una plataforma que conecta a propietarios de libros con usuarios interesados en intercambiarlos. Desarrollada en 4 semanas con metodología Scrum, utilicé MongoDB, Express.js y Mongoose",
-      image:
-        "https://cdn.pixabay.com/photo/2022/06/30/02/00/mountains-7292778_960_720.jpg",
-      url: "https://via.placeholder.com/150",
-      code: "https://via.placeholder.com/150",
+      image: interbooks,
+      url: "https://www.figma.com/design/ornRLSonLzygHQ6KyAKcM6/Intercambio-de-libros?node-id=64-2&p=f&t=zCTl802DJdg9GAgS-0",
     },
     {
-      title: "Project 5",
+      title: "BuildingHub",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe totam ratione, ea voluptate distinctio rerum quibusdam odit ipsa dolorum nostrum quisquam quidem laborum facilis consequatur fugiat placeat itaque deserunt incidunt.",
-      image:
-        "https://cdn.pixabay.com/photo/2022/09/30/10/05/river-7489170_960_720.jpg",
-      url: "https://via.placeholder.com/150",
-      code: "https://via.placeholder.com/150",
-    },
-    {
-      title: "Project 6",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe totam ratione, ea voluptate distinctio rerum quibusdam odit ipsa dolorum nostrum quisquam quidem laborum facilis consequatur fugiat placeat itaque deserunt incidunt.",
-      image:
-        "https://cdn.pixabay.com/photo/2022/06/30/02/00/mountains-7292778_960_720.jpg",
-      url: "https://via.placeholder.com/150",
-      code: "https://via.placeholder.com/150",
-    },
-    {
-      title: "Project 7",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe totam ratione, ea voluptate distinctio rerum quibusdam odit ipsa dolorum nostrum quisquam quidem laborum facilis consequatur fugiat placeat itaque deserunt incidunt.",
-      image:
-        "https://cdn.pixabay.com/photo/2022/09/30/10/05/river-7489170_960_720.jpg",
-      url: "https://via.placeholder.com/150",
-      code: "https://via.placeholder.com/150",
+        "BuildingHub es una plataforma para facilitar la comunicacion y administracion de edificios y/o comunidades.",
+      image: buildingHub,
+      url: "https://buildinghub.vercel.app/",
     },
   ];
 
@@ -96,11 +73,15 @@ const Projects = () => {
               }}
             >
               <div
-                className={`content absolute top-1/2 left-24 w-80 text-left -translate-y-1/2 text-black backdrop-blur-xl rounded-xl p-4 duration-500`}
+                className={`content absolute top-1/2 left-20 w-80 text-left -translate-y-1/2 text-black backdrop-blur-xl shadow-md shadow-slate-400 rounded-xl p-4 duration-500`}
               >
                 <h2 className="text-2xl font-bold uppercase">{p.title}</h2>
                 <p className="mt-2 mb-5">{p.description}</p>
-                <button className="px-4 py-2 border-none cursor-pointer rounded-xl bg-white text-black">
+                <button
+                  type="button"
+                  onClick={() => window.open(p.url)}
+                  className="px-4 py-2 border-none cursor-pointer rounded-xl bg-gray-400 text-black"
+                >
                   Ver proyecto
                 </button>
               </div>
@@ -110,13 +91,13 @@ const Projects = () => {
         <div className="w-full text-center absolute bottom-5 flex gap-4 justify-center">
           <button
             onClick={handlePrevSlide}
-            className="w-11 h-9 rounded-lg border-none mx-0 my-1 backdrop-blur-md duration-300 hover:bg-slate-400 flex items-center justify-center"
+            className="w-11 h-9 rounded-lg border-none mx-0 my-1 bg-slate-200 duration-300 hover:bg-slate-400 flex items-center justify-center"
           >
             <img src={arrowLeft} />
           </button>
           <button
             onClick={handleNextSlide}
-            className="w-11 h-9 rounded-lg border-none mx-0 my-1 backdrop-blur-md duration-300 hover:bg-slate-400 flex items-center justify-center"
+            className="w-11 h-9 rounded-lg border-none mx-0 my-1 bg-slate-200 duration-300 hover:bg-slate-400 flex items-center justify-center"
           >
             <img src={arrowRight} />
           </button>

@@ -89,42 +89,46 @@ export const Redux = (props: SVGProps<SVGSVGElement>) => (
 export const Python = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="16 16 32 32"
+    viewBox="0 0 32 32"
     width="1em"
     height="1em"
+    fill="none"
     {...props}
   >
     <path
-      fill="url(#a)"
-      d="M31.885 16c-8.124 0-7.617 3.523-7.617 3.523l.01 3.65h7.752v1.095H21.197S16 23.678 16 31.876c0 8.196 4.537 7.906 4.537 7.906h2.708v-3.804s-.146-4.537 4.465-4.537h7.688s4.32.07 4.32-4.175v-7.019S40.374 16 31.885 16zm-4.275 2.454a1.394 1.394 0 1 1 0 2.79 1.393 1.393 0 0 1-1.395-1.395c0-.771.624-1.395 1.395-1.395z"
+      fill="url(#paint0_linear)"
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M13.0164 2C10.8193 2 9.03825 3.72453 9.03825 5.85185V8.51852H15.9235V9.25926H5.97814C3.78107 9.25926 2 10.9838 2 13.1111V18.8889C2 21.0162 3.78107 22.7407 5.97814 22.7407H8.27322V19.4815C8.27322 17.3542 10.0543 15.6296 12.2514 15.6296H19.5956C21.4547 15.6296 22.9617 14.1704 22.9617 12.3704V5.85185C22.9617 3.72453 21.1807 2 18.9836 2H13.0164ZM12.0984 6.74074C12.8589 6.74074 13.4754 6.14378 13.4754 5.40741C13.4754 4.67103 12.8589 4.07407 12.0984 4.07407C11.3378 4.07407 10.7213 4.67103 10.7213 5.40741C10.7213 6.14378 11.3378 6.74074 12.0984 6.74074Z"
     />
     <path
-      fill="url(#b)"
-      d="M32.115 47.833c8.124 0 7.617-3.523 7.617-3.523l-.01-3.65H31.97v-1.095h10.832S48 40.155 48 31.958c0-8.197-4.537-7.906-4.537-7.906h-2.708v3.803s.146 4.537-4.465 4.537h-7.688s-4.32-.07-4.32 4.175v7.019s-.656 4.247 7.833 4.247zm4.275-2.454a1.393 1.393 0 0 1-1.395-1.395 1.394 1.394 0 1 1 1.395 1.395z"
+      fill="url(#paint1_linear)"
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M18.9834 30C21.1805 30 22.9616 28.2755 22.9616 26.1482V23.4815H16.0763V22.7408H26.0217C28.2188 22.7408 29.9998 21.0162 29.9998 18.8889V13.1111C29.9998 10.9838 28.2188 9.25928 26.0217 9.25928H23.7266V12.5185C23.7266 14.6459 21.9455 16.3704 19.7485 16.3704H12.4042C10.5451 16.3704 9.03809 17.8296 9.03809 19.6296V26.1482C9.03809 28.2755 10.8192 30 13.0162 30H18.9834ZM19.9015 25.2593C19.1409 25.2593 18.5244 25.8562 18.5244 26.5926C18.5244 27.329 19.1409 27.9259 19.9015 27.9259C20.662 27.9259 21.2785 27.329 21.2785 26.5926C21.2785 25.8562 20.662 25.2593 19.9015 25.2593Z"
     />
     <defs>
       <linearGradient
-        id="a"
-        x1={19.075}
-        x2={34.898}
-        y1={18.782}
-        y2={34.658}
+        id="paint0_linear"
+        x1="12.4809"
+        y1="2"
+        x2="12.4809"
+        y2="22.7407"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stopColor="#387EB8" />
-        <stop offset={1} stopColor="#366994" />
+        <stop stopColor="#327EBD" />
+        <stop offset="1" stopColor="#1565A7" />
       </linearGradient>
       <linearGradient
-        id="b"
-        x1={28.809}
-        x2={45.803}
-        y1={28.882}
-        y2={45.163}
+        id="paint1_linear"
+        x1="19.519"
+        y1="9.25928"
+        x2="19.519"
+        y2="30"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stopColor="#FFE052" />
-        <stop offset={1} stopColor="#FFC331" />
+        <stop stopColor="#FFDA4B" />
+        <stop offset="1" stopColor="#F9C600" />
       </linearGradient>
     </defs>
   </svg>
@@ -132,67 +136,61 @@ export const Python = (props: SVGProps<SVGSVGElement>) => (
 
 export const Angular = (props: SVGProps<SVGSVGElement>) => (
   <svg
+    _ngcontent-ng-c1846892879=""
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
-    viewBox="0 0 242 256"
-    width="1em"
-    height="1em"
+    viewBox="0 0 223 236"
+    width="32"
     {...props}
   >
-    <g clipPath="url(#a)">
-      <mask
-        id="b"
-        width={242}
-        height={256}
-        x={0}
-        y={0}
-        maskUnits="userSpaceOnUse"
-        style={{
-          maskType: "luminance",
-        }}
-      >
-        <path fill="#fff" d="M0 0h242v256H0V0Z" />
-      </mask>
-      <g mask="url(#b)">
-        <path
-          fill="url(#c)"
-          d="m241 43-9 136L149 0l92 43Zm-58 176-62 36-63-36 12-31h101l12 31ZM121 68l32 80H88l33-80ZM9 179 0 43 92 0 9 179Z"
-        />
-        <path
-          fill="url(#d)"
-          d="m241 43-9 136L149 0l92 43Zm-58 176-62 36-63-36 12-31h101l12 31ZM121 68l32 80H88l33-80ZM9 179 0 43 92 0 9 179Z"
-        />
-      </g>
+    <g _ngcontent-ng-c1846892879="" clip-path="url(#2a)">
+      <path
+        _ngcontent-ng-c1846892879=""
+        fill="url(#2b)"
+        d="m222.077 39.192-8.019 125.923L137.387 0l84.69 39.192Zm-53.105 162.825-57.933 33.056-57.934-33.056 11.783-28.556h92.301l11.783 28.556ZM111.039 62.675l30.357 73.803H80.681l30.358-73.803ZM7.937 165.115 0 39.192 84.69 0 7.937 165.115Z"
+      />
+      <path
+        _ngcontent-ng-c1846892879=""
+        fill="url(#2c)"
+        d="m222.077 39.192-8.019 125.923L137.387 0l84.69 39.192Zm-53.105 162.825-57.933 33.056-57.934-33.056 11.783-28.556h92.301l11.783 28.556ZM111.039 62.675l30.357 73.803H80.681l30.358-73.803ZM7.937 165.115 0 39.192 84.69 0 7.937 165.115Z"
+      />
     </g>
-    <defs>
+    <defs _ngcontent-ng-c1846892879="">
       <linearGradient
-        id="c"
-        x1={53.2}
-        x2={245}
-        y1={231.9}
-        y2={140.7}
+        _ngcontent-ng-c1846892879=""
+        id="2b"
+        x1="49.009"
+        x2="225.829"
+        y1="213.75"
+        y2="129.722"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stopColor="#E40035" />
-        <stop offset={0.2} stopColor="#F60A48" />
-        <stop offset={0.4} stopColor="#F20755" />
-        <stop offset={0.5} stopColor="#DC087D" />
-        <stop offset={0.7} stopColor="#9717E7" />
-        <stop offset={1} stopColor="#6C00F5" />
+        <stop _ngcontent-ng-c1846892879="" stop-color="#E40035" />
+        <stop _ngcontent-ng-c1846892879="" offset=".24" stop-color="#F60A48" />
+        <stop _ngcontent-ng-c1846892879="" offset=".352" stop-color="#F20755" />
+        <stop _ngcontent-ng-c1846892879="" offset=".494" stop-color="#DC087D" />
+        <stop _ngcontent-ng-c1846892879="" offset=".745" stop-color="#9717E7" />
+        <stop _ngcontent-ng-c1846892879="" offset="1" stop-color="#6C00F5" />
       </linearGradient>
       <linearGradient
-        id="d"
-        x1={44.5}
-        x2={170}
-        y1={30.7}
-        y2={174}
+        _ngcontent-ng-c1846892879=""
+        id="2c"
+        x1="41.025"
+        x2="156.741"
+        y1="28.344"
+        y2="160.344"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stopColor="#FF31D9" />
-        <stop offset={1} stopColor="#FF5BE1" stopOpacity={0} />
+        <stop _ngcontent-ng-c1846892879="" stop-color="#FF31D9" />
+        <stop
+          _ngcontent-ng-c1846892879=""
+          offset="1"
+          stop-color="#FF5BE1"
+          stop-opacity="0"
+        />
       </linearGradient>
-      <clipPath id="a">
-        <path fill="#fff" d="M0 0h242v256H0z" />
+      <clipPath _ngcontent-ng-c1846892879="" id="2a">
+        <path _ngcontent-ng-c1846892879="" fill="#fff" d="M0 0h223v236H0z" />
       </clipPath>
     </defs>
   </svg>
