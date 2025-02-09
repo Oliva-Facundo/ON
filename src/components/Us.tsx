@@ -1,4 +1,5 @@
 import facu from "../assets/aaaaa.jpg";
+import gusta from "../assets/photo_cv-circle.png";
 
 const Us = () => {
   const us = [
@@ -6,8 +7,7 @@ const Us = () => {
       name: "Gustavo",
       description:
         "Soy un desarrollador backend junior con experiencia en Python y JavaScript. Tengo conocimientos en bases de datos SQL (PostgreSQL) y NoSQL (MongoDB). He trabajado en equipos ágiles usando Scrum para crear soluciones escalables. Me apasiona aprender y aplicar buenas prácticas de ingeniería, como CI/CD y automatización con Git. Busco un entorno desafiante donde seguir creciendo y aportar a productos innovadores.",
-      image:
-        "https://cdn.discordapp.com/attachments/1144286248563900527/1253712199306842122/photo_cv-circle.png?ex=67a36ff9&is=67a21e79&hm=6175782ff0981866e6ff292902276cf508b0968ce640c13167cc988635e1917e&",
+      image: gusta,
       style: "flex-row",
       github: "https://github.com/NievasGustavo",
     },

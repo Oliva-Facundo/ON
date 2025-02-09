@@ -1,19 +1,19 @@
-// import Contact from "./components/Contact";
-// import Footer from "./components/Footer";
-// import Header from "./components/Header";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import Projects from "./components/Projects";
-// import Tech from "./components/Tech";
-// import Us from "./components/Us";
+import Tech from "./components/Tech";
+import Us from "./components/Us";
 
 function App() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <Projects />
-      {/* <Us /> */}
-      {/* <Tech /> */}
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+      <Us />
+      <Tech />
+      <Contact />
+      <Footer />
     </>
   );
 }

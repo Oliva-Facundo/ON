@@ -103,11 +103,11 @@ const Tech = () => {
   ];
 
   return (
-    <section id="tech" className="flex flex-col gap-5 items-center my-14">
-      <h2 className="text-2xl font-semibold pb-4">
+    <section id="tech" className="flex flex-col gap-5 items-center my-1 py-20">
+      <h2 className="text-2xl font-semibold pb-12">
         Tecnologias que utilizamos
       </h2>
-      <div className="flex flex-wrap justify-center gap-6 w-3/5">
+      <div className="flex flex-wrap justify-center gap-6 w-2/4">
         {techs.map((t) => (
           <TechCard name={t.name} web={t.web} key={t.name} svg={t.svg} />
         ))}
